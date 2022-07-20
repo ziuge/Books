@@ -13,6 +13,9 @@
 		DEBC9E8E2887D04C0081690D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBC9E8C2887D04C0081690D /* Main.storyboard */; };
 		DEBC9E902887D04E0081690D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBC9E8F2887D04E0081690D /* Assets.xcassets */; };
 		DEBC9E932887D04E0081690D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBC9E912887D04E0081690D /* LaunchScreen.storyboard */; };
+		DEBC9E9B2887D11C0081690D /* BooksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC9E9A2887D11C0081690D /* BooksCollectionViewController.swift */; };
+		DEBC9E9D2887D1470081690D /* BooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC9E9C2887D1470081690D /* BooksCollectionViewCell.swift */; };
+		DEBC9E9F2887D6200081690D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC9E9E2887D6200081690D /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DEBC9E8F2887D04E0081690D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEBC9E922887D04E0081690D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEBC9E942887D04E0081690D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBC9E9A2887D11C0081690D /* BooksCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewController.swift; sourceTree = "<group>"; };
+		DEBC9E9C2887D1470081690D /* BooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEBC9E9E2887D6200081690D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				DEBC9E882887D04C0081690D /* SceneDelegate.swift */,
 				DEBC9E8A2887D04C0081690D /* ViewController.swift */,
 				DEBC9E8C2887D04C0081690D /* Main.storyboard */,
+				DEBC9E9C2887D1470081690D /* BooksCollectionViewCell.swift */,
+				DEBC9E9A2887D11C0081690D /* BooksCollectionViewController.swift */,
+				DEBC9E9E2887D6200081690D /* Book.swift */,
 				DEBC9E8F2887D04E0081690D /* Assets.xcassets */,
 				DEBC9E912887D04E0081690D /* LaunchScreen.storyboard */,
 				DEBC9E942887D04E0081690D /* Info.plist */,
@@ -140,7 +149,10 @@
 			files = (
 				DEBC9E8B2887D04C0081690D /* ViewController.swift in Sources */,
 				DEBC9E872887D04C0081690D /* AppDelegate.swift in Sources */,
+				DEBC9E9F2887D6200081690D /* Book.swift in Sources */,
 				DEBC9E892887D04C0081690D /* SceneDelegate.swift in Sources */,
+				DEBC9E9D2887D1470081690D /* BooksCollectionViewCell.swift in Sources */,
+				DEBC9E9B2887D11C0081690D /* BooksCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
