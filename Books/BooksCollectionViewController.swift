@@ -49,7 +49,11 @@ class BooksCollectionViewController: UICollectionViewController {
         print(bookList[indexPath.row])
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: BookDetailViewController.identifier) as! BookDetailViewController
-        BookDetailViewController().changeBookInfo(data: bookList[indexPath.row])
+        
+//        vc.changeBookInfo(data: bookList[indexPath.row])
+//        vc.bookTitleLabel?.text = self.bookList[indexPath.row].title
+        vc.book = bookList[indexPath.row]
+
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
