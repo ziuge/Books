@@ -43,4 +43,23 @@ class BooksCollectionViewController: UICollectionViewController {
         
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("didselectItem", indexPath.row)
+        print(bookList[indexPath.row])
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: BookDetailViewController.identifier) as! BookDetailViewController
+        BookDetailViewController().changeBookInfo(data: bookList[indexPath.row])
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @IBAction func searchBtnClicked(_ sender: UIBarButtonItem) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: BookSearchViewController.identifier) as! BookSearchViewController
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
+    }
+    
 }
